@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Google Fake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            object-position: center bottom;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(32, 33, 36, 1);
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            color: #000000;
+        }
+
+        button {
+            background-color: #303134;
+            border: 1px solid #303134;
+            border-radius: 4px;
+            color: #e8eaed;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .search-input {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .search-bar {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .search-bar form {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-bar i {
+            margin-right: 5px;
+        }
+
+        .search-bar input {
+            color: #e8eaed;
+            padding: 10px;
+            border: 1px solid #bdc1c6;
+            border-radius: 30px;
+            background-color: rgba(32, 33, 36, 1);
+            height: 25px;
+            width: 500px;
+
+        }
+
+        .fa-search {
+            color: #bdc1c6;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .buttons button {
+            margin: 0 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="logo">
+        <img alt="Google" height="92"
+            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
+            srcset="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png 2x"
+            width="272">
+
+        <div class="search-bar">
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <div class="search-input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="q" placeholder="Pesquisar no Google">
+                </div>
+                <div class="buttons">
+                    <button type="submit" name="search-google">Pesquisa Google</button>
+                    <button type="submit" name="lucky">Estou com sorte</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
